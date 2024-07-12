@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hi Asmita!</title>
+<!--    title logo-->
+    <link rel="icon" href="baby.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.8/lottie.min.js" integrity="sha512-w58XJ/0dVbEfZVJoJyBUOTMGBWmIW4jEYJSA0898d2L0Ghpum0FvwK7qTuHhkTctApzrchv3Neli+28ajI4+fg==" crossorigin="anonymous"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+            integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"
+            integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg=="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"
+            integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww=="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+            integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/CSSRulePlugin.min.js"
+            integrity="sha512-0bzaetZStCnsUgbCtGVxftzF/L32PNOnrMlYLXwBOKl8cUjTSSDfJVyyJsNwGoI0iE0WUqni2eEfO35kJjFj5g=="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/MotionPathPlugin.min.js"
+            integrity="sha512-Dbub1kAP2vz+A+B+SnoJ/d79wY/Lxj/4c5A2LDm8sCF2YWHGJJRYNxDCJLP56cCsVfzhVZMMqPbGDx8ckvdt5g=="
+            crossorigin="anonymous"></script>
+    <script>gsap.registerPlugin(MotionPathPlugin)</script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>    <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+
+
+
+<div style="background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);padding:10px;">
+    <center>
+
+        <div class="modal fade" id="getStartedModal" tabindex="-1" aria-labelledby="getStartedModalLabel" aria-hidden="true"  data-backdrop="static">
+            <div class="modal-dialog modal-full">
+                <div class="modal-content">
+
+                    <div class="modal-body" style="background-color: #000;">
+                        <div class="container">
+                            <img src="baby.png" class="img-fluid custom-img" style="padding: 10px;">
+                        </div>
+                    </div>
+                    <div class="modal-footer" >
+                        <button type="button" class="btn btn-pink btn-block" onclick="startSong()" data-dismiss="modal">Open Your Birthday Card</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h1 style="color:#fff;font-weight: bold;padding:10px; font-family: Handlee,serif;">Hi Asmita!</h1>
+        </div>
+<!--        <h2 style="color: #fff">&hearts;&hearts;&hearts;</h2>-->
+        <div class="container">
+            <img src="doc.gif" class="img-fluid custom-img" style="padding: 10px;">
+        </div>
+        <div class="container">
+                    <h5 style="color:#fff;font-weight: bold;padding:10px">You’re officially the only doctor who can cure my heart of being smitten! Here’s to a year filled with attentive patients and ludo games that make sense. Wishing you a prescription for the best day ever!</h5>
+        </div>
+
+        <div class="container">
+            <img src="moon.jpg" class="img-fluid custom-img" style="padding: 10px;">
+        </div>
+
+        <div class="container">
+            <h5 style="color:#fff;font-weight: bold;padding:10px">You’re not just any doctor – you’re the cardiologist of my dreams! You mean more to me than the moon and stars combined.</h5>
+        </div>
+
+        <div class="container">
+            <img src="animation.gif" class="img-fluid custom-img" style="padding: 10px;">
+        </div>
+
+        <div class="container">
+            <h5 style="color:#fff;font-weight: bold;padding:10px">From your secret admirer who’s hopelessly hooked on your smile and always in awe of your stethoscope skills. Happy Birthday, Asmita!</h5>
+        </div>
+
+        <div class="container">
+            <h5 style="color:#fff;font-weight: bold;padding:10px">PS: If Smile truly is the best medicine, you owe me a lifetime supply after this card!</h5>
+        </div>
+
+    </center>
+    <audio id="myAudio">
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+
+</div>
+</body>
+<script src="app.js"></script>
+</html>
